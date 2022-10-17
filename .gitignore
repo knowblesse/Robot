@@ -1,2 +1,7 @@
 .idea
 *.swp
+RobotSerialController/.vs
+RobotSerialController/bin
+RobotSerialController/obj
+*.pfx
+
