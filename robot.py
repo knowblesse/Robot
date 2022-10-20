@@ -4,7 +4,7 @@ import numpy as np
 import serial
 import time
 
-URL = r'http://choilab409.iptime.org:12345/'
+URL = r'http://192.168.0.77:8081/'
 THRESHOLD = 190
 ANIMAL_SIZE = 500
 ANIMAL_MAX_SIZE = 40000
