@@ -136,12 +136,12 @@ def selectTargetColor(targetName, colorRange, markerType, markerColor):
     cv.waitKey()
     cv.destroyWindow(targetName + ' Position')
 
-    return [robotColor, objectLocations]
+    return [targetColor, objectLocations]
 
 robotColor, robotLocations = selectTargetColor('Robot', 50, cv.MARKER_DIAMOND, (0, 0, 255))
-rewardColor, rewardLocations = selectTargetColor('Reward', 50, cv.MARKER_STAR, (0, 255, 255))
+rewardColor, rewardLocations = selectTargetColor('Reward', 30, cv.MARKER_STAR, (0, 255, 255))
 
-if len(robotLocation) == 1:
+if len(robotLocations) != 1:
     raise(BaseException("Wrong robot location"))
 
 ###############################################################
